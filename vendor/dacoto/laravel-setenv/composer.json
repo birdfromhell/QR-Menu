@@ -1,0 +1,48 @@
+{
+    "name": "dacoto/laravel-setenv",
+    "description": "A .env editor for Laravel",
+    "type": "library",
+    "homepage": "https://dacoto.github.io/laravel-setenv/",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/dacoto97"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^7.0|^8.74|^9.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "orchestra/testbench": "^4.0|^5.0|^6.4",
+        "phpunit/phpunit": "^8.0|^9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "dacoto\\SetEnv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dacoto\\SetEnv\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dacoto\\SetEnv\\SetEnvServiceProvider"
+            ],
+            "aliases": {
+                "SetEnv": "dacoto\\SetEnv\\Facades\\SetEnv"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Cortés",
+            "email": "cortestoledanodavid@gmail.com"
+        }
+    ]
+}
